@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container } from "@mui/material";
 
+import "./App.css";
+
 import Navbar from "./components/dynamic/Navbar.js";
 import IndexPage from "./components/dynamic/IndexPage.js";
 import Home from "./components/dynamic/Home.js";
@@ -136,7 +138,7 @@ function App() {
       <Navbar user={user} />
       <Container maxWidth="100%" marginTop="20px">
         {Authorization()}
-        {/* <SocialFollow /> */}
+        <SocialFollow />
       </Container>
     </div>
   );
